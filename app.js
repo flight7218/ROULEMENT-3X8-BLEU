@@ -1,6 +1,13 @@
 function generateSchedule() {
   const year = parseInt(document.getElementById("year").value);
-  const cycle = "BRAAARVVVRNNNRRRBBBRAAARRRRRNNNRRRBBBRAAARVVRRNNNRRRBBBRAAARRRRRNNNRRRBBBRAAARVVRRNNNRRRBBBRAAARRRRRNNNRRRBB";
+    const cycle = [
+    "B", "R", "A", "A", "A", "R", "V", "V", "V", "R", "N", "N", "N", "R", "R", "R", "B", "B", "B", "R", "A", 
+    "A", "A", "R", "R", "R", "R", "R", "N", "N", "N", "R", "R", "R", "B", "B", "B", "R", "A", "A", "A", "R", 
+    "V", "V", "R", "R", "N", "N", "N", "R", "R", "R", "B", "B", "B", "R", "A", "A", "A", "R", "R", "R", "R", 
+    "R", "N", "N", "N", "R", "R", "R", "B", "B", "B", "R", "A", "A", "A", "R", "V", "V", "R", "R", "N", "N", 
+    "N", "R", "R", "R", "B", "B", "B", "R", "A", "A", "A", "R", "V", "V", "R", "R", "N", "N", "N", "R", "R", 
+    "R", "B", "B", "B", "R", "A", "A", "A", "R", "R", "R", "R", "R", "N", "N", "N", "R", "R", "R", "B", "B"
+];
   const cycleLength = cycle.length; // 126 jours
 
   const startDate = new Date(year, 0, 1);
